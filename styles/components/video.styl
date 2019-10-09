@@ -1,0 +1,52 @@
+.video
+  display block
+  position relative
+  &__text
+    bottom 4.8rem
+    color #fff
+    font-size 3.2rem
+    font-weight 600
+    left 4.8rem
+    position absolute
+  &__picture
+    position relative
+  &__play
+    align-items center
+    background-color $primary
+    bottom 0
+    border-radius 50%
+    circle(9.6rem)
+    display flex
+    justify-content center
+    left 0
+    margin auto
+    position absolute
+    right 0
+    top 0
+    transition all .2s ease
+  &:hover
+    .video
+      &__play
+        circle(11rem)
+  img
+    max-width 100%
+
+@media(max-width 1504px)
+  .video-section
+    .wrapper
+      padding 0
+
+@media(max-width 767px)
+  .video
+    &__picture
+      margin-bottom 1.6rem
+    &__play
+      circle(4.8rem)
+      img
+        width 50%
+    &__text
+      color $main
+      font-size 1.8rem
+      font-weight 500
+      padding-left 1.2rem
+      position initial

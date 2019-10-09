@@ -1,0 +1,31 @@
+.faq
+  cursor pointer
+  display flex
+  justify-content space-between
+  &:not(:last-child)
+    border-bottom $border
+    margin-bottom 2.4rem
+  &__top
+    display flex
+    margin-bottom 1em
+  // &__number
+  //   color $primary
+  //   font-size 2.4rem
+  //   font-weight 500
+  //   margin-right 1em
+  &__title
+    font-size 1.8rem
+    font-weight 500
+    margin-bottom 1.4em
+  &__text
+    display none
+  &__plus
+    flex-shrink 0
+    transform translateY(-.5rem)
+    img
+      transition all .3s ease
+  &--active
+    .faq
+      &__plus
+        img
+          transform rotate(45deg)

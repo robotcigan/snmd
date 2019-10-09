@@ -1,0 +1,18 @@
+$src = '../fonts/GothamPro/'
+$name = 'GothamPro'
+
+font(name, type, weight, style)
+  font-family name
+  src url($src + name + type + '.eot?#iefix') format('embedded-opentype'),
+      url($src + name + type + '.ttf') format('truetype')
+  font-weight weight
+  font-style style
+
+@font-face
+  font($name, '', 400, normal)
+
+@font-face
+  font($name,'-Medium', 500, normal)
+
+@font-face
+  font($name,'-Bold', 600, normal)

@@ -1,0 +1,67 @@
+.footer-section
+  background-color $light-gray
+  padding 4.8rem 0
+
+.footer
+  &__top
+    align-items center
+    display flex
+    justify-content space-between
+  &__bottom
+    border-top $border
+    display flex
+    justify-content space-between
+    margin-top 3.2rem
+    padding-top 3.2rem
+  &__nav
+    &:hover
+      .footer
+        &__link
+          opacity .5
+  &__link
+    transition $transition
+    &:hover
+      color $primary
+      opacity 1 !important
+    &:not(:last-child)
+      margin-right 4rem
+  &__right
+    align-items center
+    display flex
+  &__social
+    &:not(:last-child)
+      margin-right 1rem
+
+.sunmedia
+  .link
+    display inline-block
+    a
+      color $sunmedia
+
+@media(max-width 1000px)
+  .footer
+    &__top
+      display block
+    &__nav
+      margin 2rem 0
+
+@media(max-width 767px)
+  .footer-section
+    padding 2.4rem 0
+  .footer
+    &__top
+      display block
+    .logo-container
+      margin-bottom 1.2rem
+    // &__nav
+    //   display none
+    &__bottom
+      display block
+      margin-top 1.6rem
+      padding-top 1.6rem
+    .copyright
+      margin-bottom .5em
+    &__link
+      display block
+      margin-bottom 1em
+

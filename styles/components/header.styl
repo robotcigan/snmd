@@ -1,0 +1,142 @@
+.empty
+  height 18rem
+
+.header
+  // background-color #fff
+  // opacity 0
+  padding 3.2rem 0
+  position fixed
+  // position absolute
+  top 0
+  transition background-color .3s ease, padding .3s ease
+  width 100%
+  z-index 300
+  &__container
+    align-items center
+    display flex
+    justify-content space-between
+  &__left
+    align-items center
+    display flex
+  .lang
+    &__item
+      // color #fff
+      opacity .5
+      transition $transition
+      &:not(:last-child)
+        margin-right 1em
+      &:hover
+        color $primary
+        opacity 1
+      &--active
+        color $primary
+        opacity 1
+  &--white
+    .logo--black
+      display none
+    .nav
+      color #fff
+    .burger
+      &:before,
+      &:after
+        background-color #fff
+    .lang
+      &__item
+        color #fff
+  &--scroll
+    background-color #fff
+    padding 2.4rem 0
+    .logo--white
+      display none
+    .logo--black
+      display block
+    .nav
+      color $main
+    .lang
+      &__item
+        color $main
+    .burger
+      &:before,
+      &:after
+        background-color $main
+
+.nav
+  &:hover
+    .nav
+      &__link
+        opacity .5
+  &__link
+    font-size 1.6rem
+    margin-right 2em
+    transition all .3s ease
+    &:hover
+      color $primary
+      opacity 1 !important
+
+.burger
+  display none
+  position relative
+  transform translateY(-4px)
+  width 2.4rem
+  &:before,
+  &:after
+    background-color $main
+    content ''
+    height 2px
+    // left -2.4rem
+    position absolute
+    top 0
+    transition all .3s ease
+    width 2.4rem
+  &:after
+    top 8px
+  &--active
+    &:before
+      transform rotate(45deg) translateY(6px)
+    &:after
+      transform rotate(-45deg) translateY(-6px)
+
+.mobile-menu
+  background-color #fff
+  box-shadow 0px 40px 16px -2px rgba(0, 0, 0, .15)
+  display none
+  left 0
+  padding 2.4rem 1.2rem
+  // padding-bottom 4rem
+  position fixed
+  top 4.8rem
+  width 100%
+  z-index 500
+  &__link
+    display block
+    font-size 2.4rem
+    &:not(:last-child)
+      margin-bottom 1em
+
+@media(max-width 1200px)
+  .empty
+    height 10rem
+  .header
+    &__free
+      color $primary
+  .nav
+    &__link
+      font-size 1.4rem
+  
+
+@media(max-width 1000px)
+  .empty
+    height 8rem
+  .header
+    // background-color #fff
+    padding 1.2rem 0
+    &__free
+      display none
+  .nav
+    display none
+  .burger
+    display block
+
+
+
+

@@ -1,0 +1,51 @@
+.program
+  height 40rem
+  margin-bottom 3.2rem
+  &__container
+    max-width 50rem
+    margin-left 6.4rem
+    padding 6.4rem 0
+  &__title
+    color #fff
+    margin-bottom 1.6rem
+  &__subtitle
+    color #fff
+  &__buttons
+    align-items center
+    display flex
+    .btn
+      margin-right 4rem
+  &__about
+    color #fff
+  &--lite
+    background-color $lite
+  &--pro
+    background-color $pro
+  &--signals
+    background-color $signals
+  &--traderoom
+    background-color $traderoom
+
+@media(max-width 1200px)
+  .program
+    background-image initial !important
+    height initial
+    &__container
+      margin-left 3.2rem
+      padding-top 3.2rem
+
+@media(max-width 767px)
+  .programs
+    .container
+      grid-row-gap 0
+
+  .program
+    &__container
+      padding-right 3.2rem
+
+@media(max-width 500px)
+  .program
+    &__buttons
+      flex-wrap wrap
+    &__about
+      margin-top 1em
