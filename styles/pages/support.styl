@@ -7,12 +7,29 @@
     flex-direction column
     height 100%
     justify-content space-between
+    position relative
     // align-items space-between
     &__top
       padding 32px
       padding-bottom 0
     .ul
       margin-bottom 24px
+    &__p
+      margin-bottom .5em
+    &__blue-text
+      color $primary
+      font-weight 600
+      margin-bottom 1em
+    &__attention
+      align-items center
+      display flex
+      &-icon
+        flex-shrink 0
+        margin-left -3px
+        margin-right 12px
+      &-text
+        line-height 1.4
+        transform translateY(-2px)
     &__price
       align-items flex-end
       display flex
@@ -27,6 +44,18 @@
         transform translateY(-2px)
       & + .support-table__price
         margin-bottom 32px
+    ul.ul
+      &-plus
+        li
+          &:before
+            background-color initial
+            color $primary
+            content '+'
+            font-weight 600
+            height initial
+            left -14px
+            top .2em
+            width initial
     &__footer
       flex-grow 0
       // max-height 108px
@@ -36,3 +65,14 @@
     &__button
       background-color $light-gray
       padding 24px 32px
+    &-marked
+      border 1px solid $primary
+    &__plate
+      position absolute
+      right -8px
+      top -8px
+
+
+
+
+

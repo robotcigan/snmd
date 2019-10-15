@@ -3,14 +3,13 @@ extends layout.pug
 
 block content
   
-  .container
     section.content_row
       .wrapper
         h1 Поддержка сайта
         p Информацию по поддержке и другой информации вы можете уточнить у нашего менеджера по телефону +7 996 051-35-51
         .support-tables
           .grid-container
-            .col.col--md-4
+            .col.col--xl-4
               .support-table
                 .support-table__top
                   h2 Техническая
@@ -34,7 +33,7 @@ block content
                   .support-table__button
                     .button Заказать поддержку
 
-            .col.col--md-4
+            .col.col--xl-4
               .support-table
                 .support-table__top
                   h2 Контентная
@@ -58,21 +57,31 @@ block content
                   .support-table__button
                     .button Заказать поддержку
 
-            .col.col--md-4
-              .support-table
+            .col.col--xl-4
+              .support-table.support-table-marked
                 .support-table__top
-                  h2 Техническая
-                  p Включает техническую и контентную поддержку
+                  h2 Полная
+                  p.support-table__p Включает техническую и контентную поддержку
+                  ul.ul.ul-plus
+                    li Аналитика данных метрик сайта
+                    li Предложения по развитию и оптимизации сайта
+                    li Регулярная аналитика метрик
+                  .support-table__blue-text Внедерение принятных улучшений
+                  .support-table__attention
+                    .support-table__attention-icon
+                      img(src="./img/attention-icon.svg", alt="")
+                    .support-table__attention-text При превышении лимита скидка -10% от стоимости стандартного нормо-часа
                 .support-table__footer
                   .support-table__price
-                    .support-table__price-number 14 000 ₽/мес.
+                    .support-table__price-number 27 000 ₽/мес.
                     .support-table__price-comment 8 нормо-часов в месяц
                   .support-table__price
                     .support-table__price-number 14 000 ₽/мес.
                     .support-table__price-comment 8 нормо-часов в месяц
                   .support-table__button
                     .button Заказать поддержку
-
+                .support-table__plate
+                  img(src="./img/support-table-plate.svg", alt="")
 
 
 

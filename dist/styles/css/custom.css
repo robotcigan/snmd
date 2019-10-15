@@ -458,10 +458,10 @@ ul.ul li:before {
     grid-column: span 12;
   }
 }
-@media (min-width: 1520px) {
+@media (min-width: 1650px) {
   .wrapper {
     padding: 0;
-    width: 1504px;
+    width: 1410px;
   }
 }
 @media (max-width: 1199px) {
@@ -653,6 +653,7 @@ ul.ul li:before {
   height: 100%;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 .support-tables .support-table__top {
   padding: 32px;
@@ -660,6 +661,31 @@ ul.ul li:before {
 }
 .support-tables .support-table .ul {
   margin-bottom: 24px;
+}
+.support-tables .support-table__p {
+  margin-bottom: 0.5em;
+}
+.support-tables .support-table__blue-text {
+  color: #1476fb;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.support-tables .support-table__attention {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+.support-tables .support-table__attention-icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: -3px;
+  margin-right: 12px;
+}
+.support-tables .support-table__attention-text {
+  line-height: 1.4;
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 .support-tables .support-table__price {
   -ms-flex-align: end;
@@ -682,6 +708,16 @@ ul.ul li:before {
 .support-tables .support-table__price + .support-table__price {
   margin-bottom: 32px;
 }
+.support-tables .support-table ul.ul-plus li:before {
+  background-color: initial;
+  color: #1476fb;
+  content: '+';
+  font-weight: 600;
+  height: initial;
+  left: -14px;
+  top: 0.2em;
+  width: initial;
+}
 .support-tables .support-table__footer {
   -ms-flex-positive: 0;
   flex-grow: 0;
@@ -690,6 +726,14 @@ ul.ul li:before {
 .support-tables .support-table__button {
   background-color: #f4f4f4;
   padding: 24px 32px;
+}
+.support-tables .support-table-marked {
+  border: 1px solid #1476fb;
+}
+.support-tables .support-table__plate {
+  position: absolute;
+  right: -8px;
+  top: -8px;
 }
 .small-offset {
   margin-bottom: 1em;
